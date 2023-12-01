@@ -13,7 +13,7 @@ resource "aws_iam_policy" "s3_put_policy" {
     {
       "Effect": "Allow",
       "Action": "cloudfront:CreateInvalidation",
-      "Resource": "${aws_cloudfront_distribution.s3_distribution.arn}}"
+      "Resource": "${aws_cloudfront_distribution.s3_distribution.arn}"
     }
   ]
 }
