@@ -1,4 +1,5 @@
 # CLCM3404 Course Project - Implementing a Game Project on AWS Cloud
+Author: Zhongyi Fu  (z.fu177@mybvc.ca)
 
 ## Infrastructure Repository (Terraform)
 
