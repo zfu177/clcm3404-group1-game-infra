@@ -9,6 +9,11 @@ resource "aws_iam_policy" "s3_put_policy" {
       "Effect": "Allow",
       "Action": "s3:PutObject",
       "Resource": "${aws_s3_bucket.website.arn}/*"
+    },
+    {
+      "Effect": "Allow",
+      "Action": "cloudfront:CreateInvalidation",
+      "Resource": "${aws_cloudfront_distribution.s3_distribution.arn}}"
     }
   ]
 }
