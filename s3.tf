@@ -38,7 +38,7 @@ resource "aws_s3_bucket_cors_configuration" "website" {
 
   cors_rule {
     allowed_headers = ["*"]
-    allowed_methods = ["GET", "POST", "PUT", "DELETE", "OPTIONS", "HEAD"]
+    allowed_methods = ["GET", "PUT", "HEAD"]
     allowed_origins = ["*"]
     expose_headers  = []
   }
